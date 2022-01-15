@@ -19,7 +19,7 @@ export default function Home() {
       ></video>
       <header className={styles.header}>
         <nav>
-          <Image
+          <img
             src="https://demo.acknoledger.com/assets/logo.72d2ab8d.png"
             alt="logo"
             width="162px"
