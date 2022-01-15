@@ -92,7 +92,7 @@ export default () => {
     })
 
     return (
-        <div>
+        <div className="margins">
 
             <Swiper
                 grabCursor='true'

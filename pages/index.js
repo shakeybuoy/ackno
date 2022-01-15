@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Demo</title>
       </Head>
-      <video
+      {/* <video
         src="https://demo.acknoledger.com/assets/space-bg.mp4"
         type="video/mp4"
         playsInline
@@ -16,7 +16,7 @@ export default function Home() {
         muted
         loop
         className={styles.myVideo}
-      ></video>
+      ></video> */}
       <header className={styles.header}>
         <nav>
           <img
