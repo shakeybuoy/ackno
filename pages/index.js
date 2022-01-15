@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Swipe from '../components/swipe'
-import Image from 'next/image'
+
 export default function Home() {
   return (
     <div>
@@ -19,7 +19,7 @@ export default function Home() {
       ></video>
       <header className={styles.header}>
         <nav>
-          <Image
+          <img
             src="https://demo.acknoledger.com/assets/logo.72d2ab8d.png"
             alt="logo"
             width="162px"
