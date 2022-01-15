@@ -20,7 +20,7 @@ const planetContents = {
     },
     {
         id: 3,
-        name: 'The Sandbox',
+        name: 'Planet 3',
         sales: '47K ETH'
         , volumes: ' 10.1K',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate mauris ut odio maximus elementum. Nullam vitae gravida leo. Pellentesque pretium tempus lorem id convallis. Nullam eu velit non urna semper fermentum'
@@ -54,7 +54,7 @@ const planetContents = {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate mauris ut odio maximus elementum. Nullam vitae gravida leo. Pellentesque pretium tempus lorem id convallis. Nullam eu velit non urna semper fermentum'
     }, {
         id: 8,
-        name: 'Planet 3',
+        name: 'Planet 4',
         sales: '6K ETH'
         , volumes: ' 99K',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate mauris ut odio maximus elementum. Nullam vitae gravida leo. Pellentesque pretium tempus lorem id convallis. Nullam eu velit non urna semper fermentum'
@@ -73,7 +73,7 @@ export default () => {
     let planetList = [];
     var planets = [];
     var name = 'axie-infinity-';
-    var planetSrc = 'https://demo.acknoledger.com/storage/';
+    var planetSrc = './images/';
     var ext = '.gif'
     for (var i = 2; i <= 10; i++) {
         var planet = planetSrc + name + i + ext;
@@ -85,7 +85,7 @@ export default () => {
         var pl = planetContents.items[index]
         planets.push(
             <SwiperSlide key={index} >
-                <img src={item} />
+                <img src={item} alt={pl.name} />
                 <Popup title={pl.name} volumes={pl.volumes} sales={pl.sales} description={pl.description} />
             </SwiperSlide>
         )

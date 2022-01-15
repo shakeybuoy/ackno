@@ -20,7 +20,7 @@ export default function Home() {
       <header className={styles.header}>
         <nav>
           <img
-            src="https://demo.acknoledger.com/assets/logo.72d2ab8d.png"
+            src="./images/logo.72d2ab8d.png"
             alt="logo"
             width="162px"
           />
